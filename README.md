@@ -1,5 +1,5 @@
 # Portifolio
-# Currículo online desenvolvido somente com HTML e CSS.
+## Currículo online desenvolvido somente com HTML e CSS.
 
 Projeto desenvolvido afim de melhorar meus conhecimentos nas linguagens utilizadas, além do GIT/Github.
 

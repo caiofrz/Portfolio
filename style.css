@@ -24,6 +24,7 @@ body {
     color: var(--text-color);
     padding: 30px;
     border-radius: 20px;
+    margin-top: 20px;
 }
 
 .profile {
@@ -55,7 +56,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 40px;
 }
 
 .social {
@@ -74,6 +74,105 @@ body {
     font-size: 15px;
 }
 
+.tecnologias {
+    gap: 20px;
+}
+
+.tecnologia {    
+    background: var(--image-border);
+    text-align: center;
+    width: 86px;
+    height: 24px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.tecnologia > span {
+    color: #000000;
+    font-size: 12px;
+}
+
+.educacao {
+    margin-top: 20px;
+}
+
+.educacao > ul > li{
+    align-items:flex-end;
+    margin: 20px 0 0 40px;
+}
+
+.educacao > ul > li > p{
+    font-size: 15px;
+}
+
+.projetos {
+    justify-content: space-between;
+}
+
+.projetos > a {
+    color: var(--text-color);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.meus-projetos {
+    gap: 30px;
+}
+
+.projeto {
+    width: 425px;
+    height: 170px;
+}
+
+.cabecalho-projeto {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cabecalho-projeto > a {
+    color: var(--text-color);
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.projeto > p {
+    font-size: 14px;
+    margin: 22px 10px 0 30px;
+}
+
+.linguagem {
+    margin-top: 8px;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.linguagem > span {
+    font-size: 14px;
+}
+
+.bolinha {
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #837E9F;
+}
+
+.laranja {
+    background: #eb8a0c;
+}
+
+.azul {
+    background: #2a56a8;
+}
+
+.amarelo {
+    background: #E7DE79;
+}
+
 .wrapper {
     padding: 40px;
 }
@@ -81,6 +180,12 @@ body {
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 aside {

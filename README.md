@@ -1,7 +1,7 @@
 # Portifolio
 ## Currículo online desenvolvido somente com HTML e CSS.
 
-![preview](./.github/preview.png)
+![preview](./.github/imagem_2022-11-19_212941132.png)
 
 Projeto desenvolvido afim de melhorar meus conhecimentos nas linguagens utilizadas, além do GIT/Github.
 

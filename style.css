@@ -7,14 +7,15 @@
   box-sizing: border-box;
 
   font-family: "DM Sans", sans-serif;
+  font-style: normal;
 }
 
 :root {
   --background-color: #171717;
+  --background-project: #212121;
   --green: #27ae60;
   --text-color: #fff;
   --text-color-secundary: #828282;
-
 }
 
 body {
@@ -29,7 +30,6 @@ nav {
 
 nav ul li a {
   color: var(--text-color);
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
 }
@@ -44,24 +44,28 @@ ul:hover a:hover {
 }
 
 .capa {
-  margin: 25% auto;
+  margin: 15% auto;
+}
+
+.capa img{
+  border-radius: 50%;
+
+  width: 300px;
+  height: 300px;
 }
 
 .presentation {
   justify-content: space-around;
   align-items: center;
-  /* width: 100%; */
 }
 
 .titles h1 {
-  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 62px;
 }
 
 .titles h6 {
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
@@ -73,34 +77,65 @@ ul:hover a:hover {
   height: 396px;
 }
 
-.contact img {
+.contact img,
+.techs img {
   width: 62px;
   height: 62px;
+  aspect-ratio: 3/2;
 }
 
-.contact h4 {
+.contact h4,
+.about h4,
+.techs h4,
+.projects h4 {
   text-align: center;
   padding: 3em;
+  font-size: 46;
 }
-.contact h5{
-  color: var(--text-color-secundary)
-}
-
-.contact .contact-card  a{ 
-  color: var(--green);
-}
-
-.about{
-  font-style: normal;
-  font-weight: 400;
+.contact h5,
+.techs h5 {
+  color: var(--text-color-secundary);
+  font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
-  color: var(--text-color);
 }
 
-.techs img{
-  width: 50px;
-  height: 50px;
-  aspect-ratio: inherit;
+.contact .contact-card a {
+  color: var(--green);
+}
+
+.about p,
+.project p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: justify;
+  color: var(--text-color);
+  width: 80%;
+  margin: auto;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.project{
+  background-color: var(--background-project);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);    
+  color: var(--text-color);
+  width: 350px;
+  padding: 20px;
+}
+
+.project p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  text-align: center;
 }

@@ -172,12 +172,12 @@ footer {
 
 @media screen and (max-width: 680px) {
   ul.responsive {
-    position: relative;
     background-color: var(--background-color);
     height: auto;
     padding: 20px;
     line-height: 5px;
     width: 100%;
+    flex-direction: column;
   }
   ul.responsive li.icon {
     position: absolute;

@@ -151,8 +151,13 @@ ul:hover a:hover {
 
 footer {
   background-color: var(--background-color);
+  color: var(--text-color-secundary);
+  
   height: 100px;
   width: 100%;
+
+  display: grid;
+  place-items: center;
 }
 
 @media screen and (max-width: 680px) {

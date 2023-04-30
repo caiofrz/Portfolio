@@ -25,7 +25,14 @@ body {
 
 nav {
   padding: 10px;
-  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--background-color);
+}
+
+ul li.icon {
+  display: none;
 }
 
 nav ul li a {
@@ -47,7 +54,7 @@ ul:hover a:hover {
   margin: 15% auto;
 }
 
-.capa img{
+.capa img {
   border-radius: 50%;
 
   width: 300px;
@@ -71,10 +78,6 @@ ul:hover a:hover {
   line-height: 23px;
 
   color: var(--text-color-secundary);
-}
-
-.contact {
-  height: 396px;
 }
 
 .contact img,
@@ -106,7 +109,7 @@ ul:hover a:hover {
 }
 
 .about p,
-.project p{
+.project p {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -116,26 +119,107 @@ ul:hover a:hover {
   margin: auto;
 }
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   justify-items: center;
 }
 
-.project{
+.project {
   background-color: var(--background-project);
   border-radius: 20px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);    
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   color: var(--text-color);
   width: 350px;
   padding: 20px;
 }
 
-.project p{
+.project p {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
 
   text-align: center;
+}
+
+.contact a,
+.project a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--background-color);
+  height: 100px;
+  width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+  ul li {
+    display: none;
+  }
+  ul li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  ul.responsive {
+    position: relative;
+    background-color: var(--background-color);
+    height: auto;
+    padding: 20px;
+    line-height: 5px;
+    width: 100%;
+  }
+  ul.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul.responsive li {
+    display: block;
+    text-align: center;
+    float: none;
+    padding: 10px;
+  }
+  ul.responsive li a {
+    padding: 0;
+    text-align: left;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .presentation {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .capa img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .titles h1 {
+    font-size: 36px;
+  }
+  .titles h6 {
+    font-size: 12px;
+  }
+
+  .contact-card a {
+    font-size: 12px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

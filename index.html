@@ -15,10 +15,14 @@
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body>
+  <body id="home">
     <nav>
       <ul class="nav justify-content-end">
-        <li class="nav-item"><a class="nav-link" href="#capa">Home</a></li>
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="responsiveNav()">&#9776;
+          </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contato</a>
         </li>
@@ -33,7 +37,7 @@
         </li>
       </ul>
     </nav>
-    <section class="capa" id="capa">
+    <section class="capa">
       <div class="presentation d-flex flex-row">
         <div class="titles">
           <h4>
@@ -51,7 +55,7 @@
     </section>
     <section class="contact" id="contact">
       <h4>Contato</h4>
-      <div class="cards grid">
+      <div class="grid">
         <div class="contact-card d-flex flex-column align-items-center">
           <img
             class="card-img-top"
@@ -164,30 +168,35 @@
         </div>
       </div>
     </section>
-    <section class="projects " id="projects">
+    <section class="projects" id="projects">
       <h4>Projetos</h4>
       <div class="cards grid">
         <div class="project d-flex flex-column align-items-center">
           <h5>register_app</h5>
           <p>Aplicação web de cadastro em Java</p>
-          <a target="_blank" href="https://github.com/caiofrz/register_app">Link do repo</a>
+          <a target="_blank" href="https://github.com/caiofrz/register_app"
+            >Acesse aqui</a
+          >
         </div>
         <div class="project d-flex flex-column align-items-center">
           <h5>API_buscaCep</h5>
           <p>API para pesquisa de cep's brasileiros, desenvolvida em Java</p>
-          <a target="_blank" href="">Link do repo</a>
+          <a target="_blank" href="">Acesse aqui</a>
         </div>
         <div class="project d-flex flex-column align-items-center">
           <h5>Jogo da Velha</h5>
           <p>Jogo da velha em 2d feito em Java</p>
-          <a target="_blank" href="">Link do repo</a>
+          <a target="_blank" href="">Acesse aqui</a>
         </div>
         <div class="project d-flex flex-column align-items-center">
           <h5>ToDo_react</h5>
           <p>To Do List desenvovlida utilizando framework ReactJS</p>
-          <a target="_blank" href="">Link do repo</a>
+          <a target="_blank" href="">Acesse aqui</a>
         </div>
       </div>
     </section>
+    <footer></footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

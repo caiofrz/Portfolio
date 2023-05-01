@@ -21,6 +21,8 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+
+  overflow-x: hidden
 }
 
 nav {
@@ -57,7 +59,7 @@ ul:hover a:hover {
 .capa img {
   border-radius: 50%;
 
-  width: 300px;
+  max-width: 300px;
   height: 300px;
 }
 
@@ -82,7 +84,7 @@ ul:hover a:hover {
 
 .contact img,
 .techs img {
-  width: 62px;
+  max-width: 62px;
   height: 62px;
   aspect-ratio: 3/2;
 }
@@ -131,7 +133,7 @@ ul:hover a:hover {
   border-radius: 20px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   color: var(--text-color);
-  width: 350px;
+  max-width: 350px;
   padding: 20px;
 }
 
@@ -165,8 +167,7 @@ footer {
     display: none;
   }
   ul li.icon {
-    float: right;
-    display: inline-block;
+    display: block;
   }
 }
 
@@ -176,19 +177,15 @@ footer {
     height: auto;
     padding: 20px;
     line-height: 5px;
-    width: 100%;
     flex-direction: column;
   }
   ul.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative;
   }
 
   ul.responsive li {
     display: block;
     text-align: center;
-    float: none;
     padding: 10px;
   }
   ul.responsive li a {
@@ -197,10 +194,6 @@ footer {
     line-height: 30px;
     text-align: center;
     font-size: 15px;
-  }
-
-  body {
-    width: 100%;
   }
 
   .presentation {

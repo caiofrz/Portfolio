@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Caio Ferraz - Portfolio</title>
-    <link rel="icon" href="https://www.svgrepo.com/show/500567/folder-opened.svg" type="image/png">
+    <link
+      rel="icon"
+      href="https://www.svgrepo.com/show/500567/folder-opened.svg"
+      type="image/png"
+    />
 
     <link
       rel="stylesheet"
@@ -14,23 +18,22 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
   </head>
   <body id="home">
     <nav>
       <ul class="nav justify-content-end">
         <li class="nav-item icon">
-          <a href="javascript:void(0);" onclick="responsiveNav()">&#9776;
-          </a>
+          <a href="javascript:void(0);" onclick="responsiveNav()">&#9776; </a>
         </li>
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contato</a>
         </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">Sobre mim</a>
-      </li>
-      <li class="nav-item">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Sobre mim</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#techs">Tecnologias</a>
         </li>
         <li class="nav-item">
@@ -41,15 +44,15 @@
     <section class="capa">
       <div class="presentation d-flex flex-row">
         <div class="titles">
-          <h4>
+          <h1>
             Olá, me chamo Caio Ferraz! <br />
             Seja bem vindo ao meu portfólio!
-          </h4>
+          </h1>
           <h6>Desenvolvedor Backend</h6>
         </div>
 
         <img
-          src="https://media.licdn.com/dms/image/D4D03AQHcWD9qO4jvwQ/profile-displayphoto-shrink_800_800/0/1682621805061?e=1687996800&v=beta&t=gd8ge3ooEo3fUetZM6jXpOcp8BS7jfypCBL3MeFh-qI"
+          src="https://avatars.githubusercontent.com/u/76256503?v=4"
           alt="Foto de perfil"
         />
       </div>
@@ -65,7 +68,7 @@
           />
           <h5 class="card-title">Email</h5>
           <a target="_blank" href="mailto:caioferrazalmeida.27@gmail.com"
-            >caioferrazalmeida.27@gmail.com</a
+            >Caio Ferraz</a
           >
         </div>
         <div class="contact-card d-flex flex-column align-items-center">
@@ -95,17 +98,16 @@
     <section class="about" id="about">
       <h4>Sobre mim</h4>
       <p>
-        Olá, meu nome é Caio, tenho 20 anos e como estudante de Análise e
-        Desenvolvimento de Sistemas, meu foco é o desenvolvimento de soluções
-        tecnológicas, especialmente na área de backend. <br /><br />Tenho
-        interesse em trabalhar em projetos desafiadores e inovadores, utilizando
-        tecnologias avançadas para aprimorar a experiência do usuário e melhorar
-        a eficiência dos processos. <br /><br />Meu gosto pelo desenvolvimento
-        de software me motiva a estar sempre em busca de novos conhecimentos e
-        habilidades, buscando aprimorar minhas competências técnicas e colaborar
-        para o sucesso da equipe. Além do meu interesse no desenvolvimento
-        backend, também possuo conhecimentos em frontend e estou sempre buscando
-        aprimorar minhas competências nesta área.
+        Olá, meu nome é Caio, tenho 21 anos e sou estudante de Análise e
+        Desenvolvimento de Sistemas. Meu objetivo é me tornar um desenvolvedor
+        fullstack Java trabalhando em projetos inovadores, desafiadores e
+        relevantes. Sou dedicado, com excelente capacidade de trabalho em
+        equipe, sempre buscando me desenvolver e partilhar conhecimentos.
+        <br /><br />
+        Tenho focado meus estudos atualmente em desenvolvimento backend,
+        especialmente com as ferramentas Java e Spring. Além do foco em
+        back-end, também possuo conhecimentos básicos em frontend. Recentemente
+        comecei os estudos no framework Angular.
       </p>
     </section>
     <section class="techs" id="techs">
@@ -173,36 +175,126 @@
       <h4>Projetos</h4>
       <div class="cards grid">
         <div class="project d-flex flex-column align-items-center">
-          <h5>register_app</h5>
-          <p>Aplicação web de cadastro em Java</p>
+          <img
+            src="https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/blogs/wonkblog/files/2016/06/0614_ParkingLot_SS.gif&w=2600"
+            class="img-fluid"
+            alt="Projeto preview"
+          />
+          <h5>Parking API</h5>
+          <p>API REST para cadastro de usuários</p>
+          <div class="stack d-flex flex-wrap justify-content-center">
+            <span class="badge badge-pill badge-success">Java 17</span>
+            <span class="badge badge-pill badge-success">Spring Boot 3</span>
+            <span class="badge badge-pill badge-success"
+              >Spring Security 6</span
+            >
+            <span class="badge badge-pill badge-success"
+              >Spring Data JPA 3</span
+            >
+            <span class="badge badge-pill badge-success">JWT</span>
+            <span class="badge badge-pill badge-success">Junit 5</span>
+            <span class="badge badge-pill badge-success">API REST</span>
+            <span class="badge badge-pill badge-success">Swagger</span>
+          </div>
+          <a
+            target="_blank"
+            href="https://apiparking-production.up.railway.app/swagger-ui/index.html"
+            >Acesse aqui</a
+          >
+        </div>
+        <div class="project d-flex flex-column align-items-center">
+          <img
+            src="https://camo.githubusercontent.com/ae3de13825f940c8f73b35eee3add2006001dace13989d45c9860287e75eeeed/68747470733a2f2f646576706f7261692e636f6d2e62722f77702d636f6e74656e742f75706c6f6164732f323032312f30312f4f2d7175652d652d435255442d373430783431342e6a7067"
+            class="img-fluid"
+            alt="Projeto preview"
+          />
+          <h5>Register APP</h5>
+          <p>API REST para cadastro de usuários.</p>
+          <div class="stack d-flex flex-wrap justify-content-center">
+            <span class="badge badge-pill badge-success">Java 17</span>
+            <span class="badge badge-pill badge-success">Spring Boot 3</span>
+            <span class="badge badge-pill badge-success"
+              >Spring Security 6</span
+            >
+            <span class="badge badge-pill badge-success"
+              >Spring Data JPA 3</span
+            >
+            <span class="badge badge-pill badge-success">MySQL</span>
+            <span class="badge badge-pill badge-success">API REST</span>
+            <span class="badge badge-pill badge-success">Swagger</span>
+          </div>
           <a target="_blank" href="https://github.com/caiofrz/register_app"
             >Acesse aqui</a
           >
         </div>
         <div class="project d-flex flex-column align-items-center">
-          <h5>API_buscaCep</h5>
-          <p>API para pesquisa de cep's brasileiros, desenvolvida em Java</p>
-          <a target="_blank" href="https://github.com/caiofrz/api_buscaCep">Acesse aqui</a>
+          <img
+            src="https://raw.githubusercontent.com/caiofrz/aqua_meter/main/images/agua-128.png"
+            class="img-fluid"
+            alt="Projeto preview"
+          />
+          <h5>Aqua Meter</h5>
+          <p>
+            Aplicação pwa, desenvolvida com JavaScript, para gerenciar o consumo
+            diário de água.
+          </p>
+          <div class="stack d-flex flex-wrap justify-content-center">
+            <span class="badge badge-pill badge-success">HTML 5</span>
+            <span class="badge badge-pill badge-success">CSS 3</span>
+            <span class="badge badge-pill badge-success">Bootstrap</span>
+            <span class="badge badge-pill badge-success">JavaScript</span>
+            <span class="badge badge-pill badge-success">NodeJS</span>
+            <span class="badge badge-pill badge-success">PWA</span>
+          </div>
+          <a target="_blank" href="https://aquameter-production.up.railway.app/"
+            >Acesse aqui</a
+          >
         </div>
         <div class="project d-flex flex-column align-items-center">
-          <h5>Jogo da Velha</h5>
-          <p>Jogo da Velha em 2d, de console, feito em Java</p>
-          <a target="_blank" href="https://github.com/caiofrz/JogoDaVelha">Acesse aqui</a>
+          <img
+            src="https://t4.ftcdn.net/jpg/00/64/76/85/500_F_64768569_CR1fK3AddPvY10aTyrP2Y90kZPiDPDgS.jpg"
+            class="img-fluid"
+            alt="Projeto preview"
+          />
+          <h5>API BuscaCep</h5>
+          <p>Projeto de API REST de consulta de cep's brasileiros.</p>
+          <div class="stack d-flex flex-wrap justify-content-center">
+            <span class="badge badge-pill badge-success">Java 17</span>
+            <span class="badge badge-pill badge-success">Spring Boot 3</span>
+            <span class="badge badge-pill badge-success"
+              >Spring Data JPA 3</span
+            >
+            <span class="badge badge-pill badge-success">MySQL</span>
+            <span class="badge badge-pill badge-success">API REST</span>
+          </div>
+          <a target="_blank" href="https://github.com/caiofrz/api_buscaCep"
+            >Acesse aqui</a
+          >
         </div>
         <div class="project d-flex flex-column align-items-center">
-          <h5>ToDo_react</h5>
-          <p>To Do List desenvolvida utilizando framework ReactJS</p>
-          <a target="_blank" href="https://github.com/caiofrz/ToDo_React">Acesse aqui</a>
+          <img
+          src="https://raw.githubusercontent.com/caiofrz/Inventory_X/master/assets/logo.png"
+          class="img-fluid" alt="Projeto preview" />
+          <h5>Inventory_X</h5>
+          <p>Aplicativo mobile em React Native para controle de estoque.</p>
+          <div class="stack d-flex flex-wrap justify-content-center">
+            <span class="badge badge-pill badge-success">JavaScript</span>
+            <span class="badge badge-pill badge-success">React Native</span>
+            <span class="badge badge-pill badge-success">Firebase</span>
+            <span class="badge badge-pill badge-success">NodeJS</span>
+            <span class="badge badge-pill badge-success">ExpoGo</span>
+            <span class="badge badge-pill badge-success">Figma</span>
+          </div>
+          <a target="_blank" href="https://github.com/caiofrz/Inventory_X"
+            >Acesse aqui</a
+          >
         </div>
       </div>
     </section>
     <footer>
-      <p>
-        &copy;
-        Caio Ferraz <span id="date" onload="date()"></span>
-      </p>
+      <p>&copy; Caio Ferraz <span id="date" onload="date()"></span></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
